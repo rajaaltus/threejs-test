@@ -21,7 +21,7 @@ canvas {
 
 @layer components {
   .scene, canvas {
-    @apply fixed top-20 -right-80 w-screen h-screen;
+    @apply fixed top-20 left-0 lg:-right-80 w-screen h-screen;
   }
   
 }
