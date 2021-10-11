@@ -1,9 +1,27 @@
-canvas {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* canvas {
   position:fixed;
   top: 0;
   left: 0;
-}
+} */
 
 main {
   position: absolute;
+  width: 100%;
+}
+/* .scene,
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+@layer components {
+  .scene, canvas {
+    @apply fixed top-20 -right-80 w-screen h-screen;
+  }
+  
 }
